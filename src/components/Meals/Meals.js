@@ -5,11 +5,9 @@ import Card from "../UI/Card";
 const Meals = (props) => {
   return (
     <>
-     
       <MealsSummary></MealsSummary>
-   
-        <AvailableMeals></AvailableMeals>
-        
+
+      <AvailableMeals></AvailableMeals>
     </>
   );
 };
