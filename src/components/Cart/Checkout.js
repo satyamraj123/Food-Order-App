@@ -37,6 +37,9 @@ const Checkout = (props) => {
       postalCode: enteredPostalCodeIsValid,
     });
     if (!formIsValid) return;
+    props.onConfirm({
+        name:enteredName,city:enteredCity,street:enteredCity,postalCode:enteredPostalCode
+    });
   };
   const nameInputClasses = `${classes.control} ${
     formInputsValidity.name ? "" : classes.invalid
